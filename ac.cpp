@@ -1,4 +1,8 @@
+#include "everything.h"
+#include "Proc.h"
 
+int main()
+{
 	DWORD procID = GetProcId(L"ac_client.exe");
 	// Module base Addr
 	uintptr_t moduleBaseAddr = GetModuleBaseAddr(procID, (L"ac_client.exe"));
